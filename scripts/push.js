@@ -9,16 +9,16 @@ const submitBtn = document.querySelector('.submit-btn');
 
 const db = fb.firestore()
 fb.auth().onAuthStateChanged(function(user) {
-    
+    console.log(user.uid)
     // console.log(nameInput)
     submitBtn.addEventListener('click', e => {
-        const u = user.email;
-    const name = nameInput.value;
-    const bio = bioInput.value;
-    const specialization = specializationInput.value;
-    const phone = phoneInput.value;
-    const gpay = gpayInput.value;
-    const paypal = paypalInput.value;
+        const u = user.uid;
+        const name = nameInput.value;
+        const bio = bioInput.value;
+        const specialization = specializationInput.value;
+        const phone = phoneInput.value;
+        const gpay = gpayInput.value;
+        const paypal = paypalInput.value;
         e.preventDefault();
 
         const data = {
@@ -37,7 +37,7 @@ fb.auth().onAuthStateChanged(function(user) {
             .set(data)
             .then(() => {
                 console.log("success")
-                window.location.href = "profile.html"
+                window.location.href = "qrdownload.html?user="+u
             })
             .catch(err => console.error(err))
 
