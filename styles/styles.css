@@ -103,7 +103,7 @@ form p {
 
 
 
-input {
+input, textarea {
   background-color: #252752;
   border: none;
   width: 60%;
