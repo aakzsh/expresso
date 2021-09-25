@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expresso Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-custom " >
+        <div class="container-fluid" >
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+      
+            <a class="navbar-brand" href="#"><div><img src="../assets/logo.svg" alt="" ></div></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Creator</a></li>
+              <li class="sign-up"><a href="templates/signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li class="login"><a href="templates/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              
+              <li class="login"><a href="templates/login.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <main>
+        
+        <section class="container">
+            <h2 class="title">Sign Up</h2>
+             <div class="card login">
+           
+                
+            <form>
+                <p>
+                    Email <br/>
+                    <input type="text" class="email" name="first_name" value=""/>
+                </p>
+                <p>
+                    Password <br/>
+                    <input type="password" class="password" name="last_name" value=""/>
+                </p>
+
+                <button class="login-btn">SignUp</button>
+
+                
+            </form>
+
+        </div>
+
+        </section>
+       
+    </main>
+
+        
+     <script src="../firebase.js"></script>   
+   <script src="../scripts/auth.js"></script> 
+</body>
+</html>

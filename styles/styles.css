@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');
 html {
     height: 100%;
   }
@@ -12,17 +13,20 @@ html {
   color: white;
 }
   body {
-    font-family: 'Josefin Sans';
+    font-family: 'Poppins';
     height: 100%;
     background: 
     rgba(22, 24, 66, 1);
     margin: 0;
   }
   
-  h1 {
+
+ 
+  h1,h2,h3,h4,h5 {
     color: white;
     margin: 0;
     padding: 15px;
+    font-family: 'Josefin Sans';
   }
   
   #container {
@@ -54,7 +58,69 @@ html {
     max-width: 700px;
     background-color: white;
   }
+
+  main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
   
+}
+
+.title {
+  margin-bottom: 6rem;
+}
+.container {
+
+  
+  width: 90vw;
+  height: 70vh;
+  margin: 5rem 0;
+  max-width: 720px;
+  /* background-color: yellow; */
+  border-radius: 4rem;
+  padding: 1.5rem 0;
+
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  flex-direction: column;
+  /* background-color: tomato; */
+ /*  */
+}
+
+form {
+  /* background-color: violet; */
+  width: 100%;
+}
+
+form p {
+  color : rgb(231, 231, 231);
+}
+
+
+
+input {
+  background-color: #252752;
+  border: none;
+  width: 60%;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1.5rem;
+
+}
+
+
+
+button {
+  color: rgb(231, 231, 231);
+  background: linear-gradient(98.76deg, #BE3360 2.22%, #53369D 97.99%);
+  border: none;
+  padding: 1rem 1.75rem;
+  border-radius: 4rem;
+}
 
 
 
