@@ -72,8 +72,8 @@ html {
 .container {
 
   
-  width: 90vw;
-  height: 70vh;
+width: 100rem;
+height: 40rem;
   margin: 5rem 0;
   max-width: 720px;
   /* background-color: yellow; */
@@ -98,6 +98,7 @@ form {
 }
 
 form p {
+
   color : rgb(231, 231, 231);
 }
 
