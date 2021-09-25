@@ -31,9 +31,16 @@ window.addEventListener('load', () => {
         <br><br>
         <h5 style="color: white; font-size: large;">Support My Venture</h5>
         <br>
-            <button class="btn1" style="border-radius: 10px; height: 4rem; ">Google Pay</button>
+            <!-- <button class="btn1" style="border-radius: 10px; height: 4rem; ">Google Pay</button> -->
             <br><br>
-            <button class="btn1" style="border-radius: 10px; height: 4rem;">Paypal</button>  
+            <script src="../scripts/gratitude.js"></script>
+            <button class="btn1" style="border-radius: 1px; height: 4rem; width: 24rem;" onclick="window.alert('paypal email: ${paypal}')">Paypal</button>
+            <br><br>
+            <div id="containerr"></div>
+            <script async
+              src="https://pay.google.com/gp/p/js/pay.js"
+              onload="onGooglePayLoaded()"></script>
+            
         <br> <br> <br> <br> <br>
           <h5 style="font-size: large;">Send a Personalised Thank You Note</h5> 
      
@@ -49,6 +56,7 @@ window.addEventListener('load', () => {
             <button class="btn1" style="border-radius: 20px; height: 4rem;">Send</button>
            
         <br><br>
+
         
         
         
