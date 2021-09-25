@@ -8,6 +8,7 @@ const qrResult = document.getElementById("qr-result");
 const outputData = document.getElementById("outputData");
 const btnScanQR = document.getElementById("btn-scan-qr");
 
+
 let scanning = false;
 
 qrcode.callback = res => {
@@ -18,7 +19,7 @@ qrcode.callback = res => {
     video.srcObject.getTracks().forEach(track => {
       track.stop();
     });
-
+// window.location.href='gratitude.html';
     qrResult.hidden = false;
     canvasElement.hidden = true;
     btnScanQR.hidden = false;
