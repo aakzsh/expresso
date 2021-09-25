@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Expresso | Home</title>
+  <title>Creator - Expresso</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="../styles/styles.css">
   <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+    <style>
+        .qr-code {
+          max-width: 200px;
+          margin: 10px;
+        }
+      </style>
 <nav class="navbar navbar-inverse navbar-custom " >
   <div class="container-fluid" >
     <div class="navbar-header">
@@ -21,32 +26,42 @@
         <span class="icon-bar"></span>                        
       </button>
 
-      <a class="navbar-brand" href="#"><div><img src="assets/logo.svg" alt="" ></div></a>
+      <a class="navbar-brand" href="#"><div><img src="../assets/logo.svg" alt="" ></div></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
             <li><a href="#">expresso</a></li>
           </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="templates/creator_welcome.html">Creator</a></li>
-        <li class="sign-up"><a href="templates/signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li class="login"><a href="templates/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="#">Creator's Corner</a></li>
+        <li><a href="#">My Profile</a></li>
+        <li><a href="#">Logout</a></li>
       </ul>
     </div>
   </div>
 </nav>
   
 <div class="container">
-    <img src="assets/astroblend.svg" alt="" width="100%" class="astro">
-    <p style="color: white; font-size: 3.5rem;" >Let your<br>favorite creator<br>know they are</p>
-    <p style="color: rgba(190, 51, 96, 1); margin-top: -11px; font-size: 3.5rem;">appreciated.</p>
-    
-    <button class="btn1" onclick="window.location.href='templates/scan.html'">Start</button>
-    <br>
-    <br>
-</div>
+    <script src=
+    "https://code.jquery.com/jquery-3.5.1.js">
+  </script>
+ <script src=
+ "../qrgen.js">
+</script> 
 
-  
+<p style="color: white; font-size: 2.5rem;" >Here's your awesome<br>QR-Code</p>
+<img src="../assets/astroblend.svg" alt="" width="100%" class="astro">
+<img src=
+"https://chart.googleapis.com/chart?cht=qr&chl=${profilemap}&chs=160x160&chld=L|0\"
+        class="qr-code img-thumbnail img-responsive" />
+
+        <a href="https://chart.googleapis.com/chart?cht=qr&chl=${profilemap}&chs=500x500&chld=L|0\.png" download>
+            <button class="btn1" >Download</button> 
+          </a>
+
+<br>
+<br>
+</div>
 
 </body>
 </html>

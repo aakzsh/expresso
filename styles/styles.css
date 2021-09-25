@@ -122,3 +122,33 @@ button {
   border-radius: 4rem;
 }
 
+
+
+  .btn1{
+   padding-top: 0.4rem;
+   padding-bottom: 0.4rem;
+    font-size: 2rem;
+    color: white;
+    border-radius: 20px;
+    box-shadow: transparent;
+    border: none;
+    background-color: rgb(218, 82, 58);
+    background-image: linear-gradient(to right,  rgba(190, 51, 96, 1), rgba(83, 54, 157, 1) );
+    height: 3rem;
+    width: 20rem;
+}
+.btn2{
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+   font-size: 2rem;
+   color: white;
+   border-radius: 20px;
+   box-shadow: transparent;
+   /* border:  2px; */
+   border-image: linear-gradient(to right,  rgba(190, 51, 96, 1), rgba(83, 54, 157, 1) );
+
+   background-color: transparent;
+   /* background-image: linear-gradient(to right,  rgba(190, 51, 96, 1), rgba(83, 54, 157, 1) ); */
+   height: 3rem;
+   width: 20rem;
+}
