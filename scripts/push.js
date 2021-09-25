@@ -6,11 +6,19 @@ const phoneInput = document.getElementById('phone');
 const gpayInput = document.getElementById('gpay');
 const paypalInput = document.getElementById('paypal');
 const submitBtn = document.querySelector('.submit-btn');
+const skipBtn = document.querySelector('.skip-btn');
 
 const db = fb.firestore()
 fb.auth().onAuthStateChanged(function(user) {
     console.log(user.uid)
     // console.log(nameInput)
+
+    skipBtn.addEventListener('click', e => {
+        e.preventDefault();
+        window.location.href = "gratitude.html?user="+user.uid
+    })
+
+
     submitBtn.addEventListener('click', e => {
         const u = user.uid;
         const name = nameInput.value;
@@ -31,6 +39,9 @@ fb.auth().onAuthStateChanged(function(user) {
         }
 
         console.log(data, name)
+
+        const docRef = db.collection.doc(u)
+        
 
         db.collection('profile')
             .doc(u)
