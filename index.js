@@ -19,7 +19,7 @@ qrcode.callback = res => {
     video.srcObject.getTracks().forEach(track => {
       track.stop();
     });
-// window.location.href='gratitude.html';
+    window.location.href='gratitude.html?user='+res;
     qrResult.hidden = false;
     canvasElement.hidden = true;
     btnScanQR.hidden = false;
