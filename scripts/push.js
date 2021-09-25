@@ -1,23 +1,24 @@
 const fb =  firebase.initializeApp(firebaseConfig);
-const nameInput = document.querySelector('.name');
-const bioInput = document.querySelector('.bio');
-const specializationInput = document.querySelector('.specialization');
-const phoneInput = document.querySelector('.phone');
-const gpayInput = document.querySelector('.gpay');
-const paypalInput = document.querySelector('.paypal');
+const nameInput = document.getElementById('name');
+const bioInput = document.getElementById('bio');
+const specializationInput = document.getElementById('specialization');
+const phoneInput = document.getElementById('phone');
+const gpayInput = document.getElementById('gpay');
+const paypalInput = document.getElementById('paypal');
 const submitBtn = document.querySelector('.submit-btn');
 
 const db = fb.firestore()
 fb.auth().onAuthStateChanged(function(user) {
-    const u = user.email;
+    
+    // console.log(nameInput)
+    submitBtn.addEventListener('click', e => {
+        const u = user.email;
     const name = nameInput.value;
     const bio = bioInput.value;
     const specialization = specializationInput.value;
     const phone = phoneInput.value;
     const gpay = gpayInput.value;
     const paypal = paypalInput.value;
-
-    submitBtn.addEventListener('click', e => {
         e.preventDefault();
 
         const data = {
@@ -28,6 +29,8 @@ fb.auth().onAuthStateChanged(function(user) {
             gpay: gpay,
             paypal: paypal
         }
+
+        console.log(data, name)
 
         db.collection('profile')
             .doc(u)
