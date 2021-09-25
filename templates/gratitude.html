@@ -9,6 +9,11 @@
   <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
  
 </head>
 
@@ -39,24 +44,43 @@
   </nav>
     <div id="container">
       
-<br><br>
-<center> <div style="background-color: white; height: 12rem; width: 12rem; border-radius: 30rem;"></div></center>
-<br>
- <center><p style="font-size: 4rem; color: white;">Aashika Jain</p></center>
-<br>
-<center> <div style="background-color:  rgba(83, 54, 157, 1);
-    ; height: 3rem; width: 25rem; border-radius: 20px;"><center><p style="color: white; padding-top: 0.5rem;">handloom crafter</p></center></div></center>
-   <br><br>
-   <center> <div style="
-     height: 3rem; width: 25rem; border-radius: 20px;"><center><p style="color: white; padding-top: 0.5rem;">36, Loves dancing and travelling.
-Always looking for opportunities to challenge my creative boundaries. </p></center></div></center>
-  <center><img src="../assets/down.svg" alt="" style="margin-top: 10rem;"></center>
+          <br><br>
+          <center> <div style="background-color: white; height: 12rem; width: 12rem; border-radius: 30rem;"></div></center>
+          <br>
+          <center><p style="font-size: 4rem; color: white;">Aashika Jain</p></center>
+          <br>
+          <center> <div style="background-color:  rgba(83, 54, 157, 1);
+              ; height: 3rem; width: 25rem; border-radius: 20px;"><center><p style="color: white; padding-top: 0.5rem;">handloom crafter</p></center></div></center>
+            <br><br>
+            <center> <div style="
+              height: 3rem; width: 25rem; border-radius: 20px;"><center><p style="color: white; padding-top: 0.5rem;">36, Loves dancing and travelling.
+          Always looking for opportunities to challenge my creative boundaries. </p></center></div></center>
+            <center><img src="../assets/down.svg" alt="" style="margin-top: 10rem;"></center>
 
-  <center><p style="margin-top: 8rem; color: rgb(233, 223, 223); padding-top: 0.5rem;">Express Your Gratitude</p></center>
-<br><br>
-  <button class="btn1" style="font-size: 1.5rem; width: 80%;">Support My Venture</button>  
- <br> <br> 
-  <button class="btn2" style="font-size: 1.5rem; width: 80%;">Send a Personalised Thank You Note</button>  
-<br><br>
+            <center><h2 style="margin-top: 8rem; color: rgb(233, 223, 223); padding-top: 0.5rem;">Express Your Gratitude</h2></center>
+          <br><br>
+          <h5 style="color: white; font-size: large;">Support My Venture</h5>
+          <br>
+              <button class="btn1" style="border-radius: 10px; height: 4rem; ">Google Pay</button>
+              <br><br>
+              <button class="btn1" style="border-radius: 10px; height: 4rem;">Paypal</button>  
+          <br> <br> <br> <br> <br>
+            <h5 style="font-size: large;">Send a Personalised Thank You Note</h5> 
+       
+          <br>
+          <center><form >
+              <div class="form-group">
+                  <label for="message"></label>
+                  <input placeholder="Type your message" style="width: 80%; max-width: 500px; color: white; height: 20rem; background-color: rgba(37, 39, 82, 1);
+              " type="text" class="form-control" id="message" aria-describedby="emailHelp" >
+              </div>
+          </form></center>
+              <br><br>
+              <button class="btn1" style="border-radius: 20px; height: 4rem;">Send</button>
+             
+          <br><br>
+    </div>
+    <script src="../firebase.js"></script>
+    <script src="../scripts/gratitude.js"></script>
 </body>
 </html>
