@@ -1,29 +1,47 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>QR Code Scanner</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
-  </head>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
 
-  <body>
-    <div id="container">
-      <h1>QR Code Scanner</h1>
+<nav class="navbar navbar-inverse navbar-custom " >
+  <div class="container-fluid" >
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
 
-      <a id="btn-scan-qr">
-        <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg">
-      </a>
-
-      <canvas hidden="" id="qr-canvas"></canvas>
-
-      <div id="qr-result" hidden="">
-        <b>Data:</b> <span id="outputData"></span>
-      </div>
+      <a class="navbar-brand" href="#"><div><img src="assets/logo.svg" alt="" ></div></a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li><a href="#">expresso</a></li>
+          </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Creator</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+<img src="assets/astroblend.svg" alt="" width="103%" class="astro">
+<p style="color: white;">Let your<br>favorite creator<br>know they are</p>
+<p style="color: white; margin-top: -11px;">appreciated</p>
 
-    <button onclick="window.location.href='newQR.html'">generate qr</button>
-    <script src="index.js"></script>
-  </body>
+</div>
+
+</body>
 </html>

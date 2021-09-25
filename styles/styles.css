@@ -2,11 +2,20 @@ html {
     height: 100%;
   }
   
+  .navbar-custom {
+    background-color: rgba(17, 19, 61, 1);
+   
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: white;
+}
   body {
-    font-family: sans-serif;
-    padding: 0 10px;
+    font-family: 'Josefin Sans';
     height: 100%;
-    background: black;
+    background: 
+    rgba(22, 24, 66, 1);
     margin: 0;
   }
   
@@ -46,3 +55,4 @@ html {
     background-color: white;
   }
   
+
