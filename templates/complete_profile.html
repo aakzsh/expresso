@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Creator - Expresso</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <script src="../qrgen.js"></script>
+<nav class="navbar navbar-inverse navbar-custom " >
+  <div class="container-fluid" >
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
+      <a class="navbar-brand" href="#"><div><img src="../assets/logo.svg" alt="" ></div></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li><a href="#">expresso</a></li>
+          </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Creator's Corner</a></li>
+        <li><a href="#">My Profile</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+<p style="color: white; font-size: 2rem;" >Complete Your Profile</p>
+<br><br>
+<form><div class="form-group">
+    <label for="name" style="color: white;" >Name</label>
+    <input type="text" style="background-color: 
+    rgba(46, 48, 96, 1); color: white;"  class="form-control" id="name" aria-describedby="emailHelp" >
+  </div></form>
+
+<br>
+<form><div class="form-group">
+    <label for="bio" style="color: white;" >Bio</label>
+    <input type="text" style="max-lines: 5; height: 10rem; background-color: 
+    rgba(46, 48, 96, 1); color: white;"  class="form-control" id="bio" aria-describedby="emailHelp" >
+  </div></form>
+
+<br>
+<form><div class="form-group">
+    <label for="specialisation" style="color: white;" >Specialisation</label>
+    <input type="text" style="background-color: 
+    rgba(46, 48, 96, 1); color: white;"  class="form-control" id="specialisation" aria-describedby="emailHelp" >
+  </div></form>
+
+<br>
+<form><div class="form-group">
+    <label for="phone" style="color: white;" >Phone Number (with country code)</label>
+    <input type="text" style="background-color: 
+    rgba(46, 48, 96, 1); color: white;"  class="form-control" id="phone" aria-describedby="emailHelp" >
+  </div></form>
+
+<br>
+<form><div class="form-group">
+    <label for="gpay" style="color: white;" >Google Pay Link</label>
+    <input type="text" style="background-color: 
+    rgba(46, 48, 96, 1); color: white;"  class="form-control" id="gpay" aria-describedby="emailHelp" >
+  </div></form>
+
+<br>
+<form><div class="form-group">
+    <label for="paypal" style="color: white;" >PayPal Link</label>
+    <input type="text" style="background-color: 
+    rgba(46, 48, 96, 1); color: white;"  class="form-control" id="paypal" aria-describedby="emailHelp" >
+  </div></form>
+
+<br>
+<button class="btn1" onclick="generate()">Submit</button>
+<br>
+<br>
+</div>
+
+</body>
+</html>
