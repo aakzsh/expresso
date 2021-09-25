@@ -88,6 +88,7 @@ html {
   height: 40rem;
   margin: 5rem 4rem;
   max-width: 720px;
+  margin: 0 auto;
   /* background-color: yellow; */
   border-radius: 4rem;
   padding: 1.5rem 0;

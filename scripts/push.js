@@ -40,7 +40,7 @@ fb.auth().onAuthStateChanged(function(user) {
 
         console.log(data, name)
 
-        const docRef = db.collection.doc(u)
+     
         
 
         db.collection('profile')
